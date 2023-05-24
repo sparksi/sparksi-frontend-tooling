@@ -10,7 +10,7 @@ module.exports = {
   },
   settings: {
     next: {
-      rootDir: ["apps/*/"],
+      rootDir: ["src/*/"],
     },
   },
 };
