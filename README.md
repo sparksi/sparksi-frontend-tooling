@@ -23,8 +23,7 @@ This is the the Sparks Interactive monorepo. A central hub for opens source pack
 ### Setup
 
 ```sh
-git clone
+git clone git@github.com:sparksi/sector-project-monorepo.git
 cd sector-project-monorepo
 pnpm i
-pnpm build
 ```
