@@ -1,0 +1,47 @@
+{
+  "name": "@sparksi/sector-project-monorepo",
+  "packageManager": "pnpm@7.15.0",
+  "version": "1.0.0",
+  "description": "Sparks Interactive monorepo. A central place for opens source packages and tools.",
+  "main": "index.js",
+  "author": "Sparks Interactive <developers@sparksinteractive.co.nz>",
+  "scripts": {
+    "build": "pnpm -r build",
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lintStyles": "stylelint --fix src/{**,.,*/**,**/**/}*.scss",
+    "lintJS": "eslint —-fix",
+    "lintPrettier": "prettier --write"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "stylelint": "^15.6.0",
+    "stylelint-config-standard-scss": "^8.0.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint —-fix",
+      "prettier --write"
+    ],
+    "*.{css,scss}": [
+      "stylelint --fix"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "printWidth": 80,
+    "tabWidth": 2
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*/*"
+  ]
+}
