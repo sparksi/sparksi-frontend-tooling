@@ -9,9 +9,11 @@
     "build": "pnpm -r build",
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lintStyles": "stylelint --fix src/{**,.,*/**,**/**/}*.scss",
-    "lintJS": "eslint —-fix",
-    "lintPrettier": "prettier --write"
+    "qa": "stylelint src/{**,.,*/**,**/**/}*.scss",
+    "lintPrettier": "prettier --write src/**/*.scss",
+    "lintStyles": "stylelint --fix src/**/*.scss",
+    "lintJSPrettier": "prettier --write src/**/*.js",
+    "lintJS": "eslint src/**/*.js"
   },
   "keywords": [],
   "license": "MIT",
@@ -27,7 +29,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint —-fix",
+      "eslint",
       "prettier --write"
     ],
     "*.{css,scss}": [

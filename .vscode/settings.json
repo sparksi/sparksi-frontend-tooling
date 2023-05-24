@@ -6,7 +6,7 @@
   "editor.autoIndent": "full",
   "editor.insertSpaces": true,
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.renderWhitespace": "boundary",
   "editor.wordWrapColumn": 80,
   "editor.wordWrap": "off",
@@ -33,5 +33,8 @@
   "telemetry.telemetryLevel": "off",
   "emptyIndent.removeIndent": true,
   "emptyIndent.highlightIndent": false,
-  "emptyIndent.highlightColor": "rgba(246,36,89,0.6)"
+  "emptyIndent.highlightColor": "rgba(246,36,89,0.6)",
+  "prettier.semi": true,
+  "css.completion.completePropertyWithSemicolon": true,
+  "scss.completion.completePropertyWithSemicolon": true,
 }
