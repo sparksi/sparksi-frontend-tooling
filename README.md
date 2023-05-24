@@ -5,7 +5,9 @@
 This is the the Sparks Interactive monorepo. A central hub for opens source packages and tools.
 
 ## Directory structure
+- `src`: For now, where components sit.
 
+Other options:
 - `packages/ui`: frontend components
 - `packages/npm`: npm packages
 - `packages/composer`: composer php packages and drupal modules
@@ -27,3 +29,7 @@ git clone git@github.com:sparksi/sector-project-monorepo.git
 cd sector-project-monorepo
 pnpm i
 ```
+
+## Tests
+Tests are in the packages/tests folder
+run `pnpm exec playwright test`
