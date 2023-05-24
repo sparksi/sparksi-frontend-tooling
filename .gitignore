@@ -5,6 +5,9 @@ node_modules
 
 # testing
 coverage
+packages/tests/test-results/
+packages/tests/playwright-report/
+packages/tests/playwright/.cache/
 
 # next.js
 .next/
