@@ -1,8 +1,8 @@
 {
-  "name": "@sparksi/sector-project-monorepo",
+  "name": "@sparksi/sparksi-frontend-tooling",
   "packageManager": "pnpm@7.15.0",
   "version": "1.0.0",
-  "description": "Sparks Interactive monorepo. A central place for opens source packages and tools.",
+  "description": "Sparks Interactive frontend-tooling. A central place for opens source packages and tools.",
   "main": "index.js",
   "author": "Sparks Interactive <developers@sparksinteractive.co.nz>",
   "scripts": {
