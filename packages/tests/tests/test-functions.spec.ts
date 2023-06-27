@@ -1,5 +1,4 @@
 import { test, expect } from '@playwright/test';
-// const { testThatReturnsAString } = require('./test.js');
 
 const testThatReturnsAString = (itemString) => {
   if (typeof itemString === 'string') {
@@ -9,18 +8,17 @@ const testThatReturnsAString = (itemString) => {
   }
 };
 
-test.describe('return String', () => {
-  test('testThatReturnsAString', async () => {
-    // Expect a function to return a string.
-    // await expect(page).toHaveTitle(/Playwright/);
-    const aString = 'this is a string';
-    const INT = 10;
-    const notString = undefined;
+test.beforeEach(async ({ page }) => {
+  await page.goto('https://www.sector.nz/');
+});
 
-    expect(testThatReturnsAString(aString)).toBe(typeof String);
-
-    expect(testThatReturnsAString(INT)).toBe(typeof INT);
-
-    expect(testThatReturnsAString(notString)).toBe(undefined);
+test.describe('Clear completed button', () => {
+  test('should display an H1 with text', async ({ page }) => {
+    await page.locator('h1.page-header').first();
+    await expect(
+      page.locator('h1.page-header', {
+        hasText: 'Sector. Content management made easy.',
+      }),
+    ).toBeVisible();
   });
 });
