@@ -1,7 +1,7 @@
 {
   "name": "@sparksi/sparksi-frontend-tooling",
   "packageManager": "pnpm@7.15.0",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sparks Interactive frontend-tooling. A central place for opens source packages and tools.",
   "main": "index.js",
   "author": "Sparks Interactive <developers@sparksinteractive.co.nz>",
