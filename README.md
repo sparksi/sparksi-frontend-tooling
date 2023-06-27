@@ -25,8 +25,8 @@ Other options:
 ### Setup
 
 ```sh
-git clone git@github.com:sparksi/sector-project-monorepo.git
-cd sector-project-monorepo
+git clone git@github.com:sparksi/sparksi-frontend-tooling.git
+cd sparksi-frontend-tooling
 pnpm i
 ```
 
