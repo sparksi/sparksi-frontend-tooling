@@ -1,7 +1,7 @@
 .test {
   color: #000;
 
-  @media screen and (width >= 768px) {
+  @media screen and (width >= 1024px) {
     color: blueviolet;
   }
 }

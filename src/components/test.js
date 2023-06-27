@@ -2,8 +2,10 @@ const testThatReturnsAString = (itemString) => {
   if (typeof itemString === 'string') {
     return itemString;
   } else {
-    return 'Error: this is not a string';
+    return Error;
   }
 };
 
-testThatReturnsAString('strings are us');
+const testFunc = testThatReturnsAString('strings are us');
+
+console.log(testFunc);

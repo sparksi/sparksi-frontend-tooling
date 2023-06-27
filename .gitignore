@@ -5,6 +5,10 @@ node_modules
 
 # testing
 coverage
+packages/tests/test-results/
+packages/tests/playwright-report/
+packages/tests/playwright/.cache/
+playwright-report/index.html
 
 # next.js
 .next/
@@ -40,3 +44,4 @@ safelist.txt
 
 #Drupal
 /vendor
+
