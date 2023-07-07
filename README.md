@@ -65,3 +65,9 @@ run `pnpm exec playwright test` (headless)
 run `pnpm exec playwright testui` (in a chromium UI)
 
 Read more about [Playwright](https://playwright.dev/)
+
+To publish to NPM
+- see `https://www.freecodecamp.org/news/how-to-create-and-publish-your-first-npm-package/`
+- Run:
+* `npm login` - You'll need to authenticate.
+* `npm pubish` - You'll need to authenticate again.
