@@ -12,7 +12,7 @@ test.beforeEach(async ({ page }) => {
   await page.goto('https://www.sector.nz/');
 });
 
-test.describe('Clear completed button', () => {
+test.describe('Visit home page and test for existance of a H1 with text', () => {
   test('should display an H1 with text', async ({ page }) => {
     await page.locator('h1.page-header').first();
     await expect(

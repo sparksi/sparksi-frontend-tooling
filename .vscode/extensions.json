@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "shinnn.stylelint",
+    "hex-ci.stylelint-plus",
+    "bradlc.vscode-tailwindcss",
+    "kamikillerto.vscode-colorize",
+    "nicoespeon.abracadabra",
+    "ms-playwright.playwright",
+    "deque-systems.vscode-axe-linter",
+    "MaxvanderSchee.web-accessibility",
+  ]
+}

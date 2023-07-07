@@ -31,6 +31,23 @@ To Install PNPM: https://pnpm.io/installation#using-npm
 
 ```
 
+Then extend your configs, for example:
+
+```json
+// .stylelintrc.json file
+{
+  "extends": "@sparksi/sparksi-frontend-tooling/stylelint"
+}
+```
+
+### Folder Structure
+- `src/`: UI components (if we were to use storybook)
+- `packages/`
+  - `/eslint`: EsLint config for extending your coding workspace.
+  - `/stylelint`: Stylelint config for extending your coding workspace.
+  - `/prettier`: Prettier config for extending your coding workspace.
+  - `/tests`: Playwright silent functional and e2e style tests
+    - see more examples https://playwright.dev/docs/writing-tests
 
 ### Contribute
 
@@ -44,8 +61,7 @@ pnpm i
 
 ## Tests
 Tests and examples are in the packages/tests folder
-run `pnpm exec playwright test`
-
-Remove packages/tests/tests-examples if they get in the way or slow things down.
+run `pnpm exec playwright test` (headless)
+run `pnpm exec playwright testui` (in a chromium UI)
 
 Read more about [Playwright](https://playwright.dev/)

@@ -9,6 +9,8 @@ packages/tests/test-results/
 packages/tests/playwright-report/
 packages/tests/playwright/.cache/
 playwright-report/index.html
+test-results/
+playwright-report/
 
 # next.js
 .next/

@@ -11,7 +11,20 @@
     "at-rule-no-unknown": [
       true,
       {
-        "ignoreAtRules": ["mixin", "mixin-content", "define-mixin"]
+        "ignoreAtRules": [
+          "mixin",
+          "mixin-content",
+          "define-mixin",
+          "extend",
+          "extends",
+          "ignores",
+          "include",
+          "media",
+          "if",
+          "else",
+          "for",
+          "each"
+        ]
       }
     ],
     "at-rule-no-vendor-prefix": true,

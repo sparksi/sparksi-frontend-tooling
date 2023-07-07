@@ -1,7 +1,7 @@
 {
   "name": "@sparksi/sparksi-frontend-tooling",
   "packageManager": "pnpm@7.15.0",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Sparks Interactive frontend-tooling. A central place for opens source packages and tools.",
   "main": "index.js",
   "author": "Sparks Interactive <developers@sparksinteractive.co.nz>",
@@ -9,6 +9,7 @@
     "build": "pnpm -r build",
     "prepare": "husky install",
     "test": "pnpm exec playwright test",
+    "uitest": "pnpm exec playwright test --ui",
     "qa": "stylelint src/{**,.,*/**,**/**/}*.scss",
     "lintPrettier": "prettier --write src/**/*.scss",
     "lintStyles": "stylelint --fix src/**/*.scss",
