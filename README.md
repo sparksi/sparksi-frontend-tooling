@@ -128,7 +128,6 @@ Plugins are rules or sets of rules built by the community that support methodolo
 User Settings: `press CMD + P then > user` Open user settings JSON.
 
 ```json
-  "stylelint.enable": true,
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
@@ -136,9 +135,6 @@ User Settings: `press CMD + P then > user` Open user settings JSON.
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-  },
-  "stylelint.configOverrides": {
-    "extends": "/Users/YourUsername/path/to/project-template/packages/stylelint/index.js",
   },
 ```
 
