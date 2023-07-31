@@ -2,15 +2,15 @@
   "breadcrumbs.enabled": true,
   "css.validate": true,
   "diffEditor.ignoreTrimWhitespace": false,
+  "editor.detectIndentation": true,
   "editor.tabSize": 2,
-  "editor.autoIndent": "full",
   "editor.insertSpaces": true,
+  "editor.autoIndent": "full",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.renderWhitespace": "boundary",
   "editor.wordWrapColumn": 80,
   "editor.wordWrap": "off",
-  "editor.detectIndentation": true,
   "editor.rulers": [
     80
   ],

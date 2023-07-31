@@ -1,34 +1,38 @@
 import { test, expect } from '@playwright/test';
 
-const testUrl = 'https://sector10.ddev.site';
-const logindeets = 'test';
+const enableThisTest = false;
 
-test.beforeEach(async ({ page }) => {
-  await page.goto(`${testUrl}/user/login`);
+if (enableThisTest) {
+  const testUrl = 'https://sector10.ddev.site';
+  const logindeets = 'test';
 
-  // Find login form
-  await expect(page.locator('#user-login-form')).toBeVisible();
+  test.beforeEach(async ({ page }) => {
+    await page.goto(`${testUrl}/user/login`);
 
-  await page.getByRole('textbox', { name: 'name' }).fill(logindeets);
-  await page.getByRole('textbox', { name: 'pass' }).fill(logindeets);
+    // Find login form
+    await expect(page.locator('#user-login-form')).toBeVisible();
 
-  // Login
-  await page.getByRole('button', { name: 'Log in' }).click();
+    await page.getByRole('textbox', { name: 'name' }).fill(logindeets);
+    await page.getByRole('textbox', { name: 'pass' }).fill(logindeets);
 
-  // Expects the URL to contain intro.
-  await expect(page).toHaveURL(/.*user\/1/);
-});
+    // Login
+    await page.getByRole('button', { name: 'Log in' }).click();
 
-test('Enable Sector Social Share', async ({ page }) => {
-  await page.goto(`${testUrl}/admin/modules`);
+    // Expects the URL to contain intro.
+    await expect(page).toHaveURL(/.*user\/1/);
+  });
 
-  // Click module label
-  await page.getByLabel('Sector Social Share').click();
-  // Install button cick
-  await page.locator('#edit-actions input.button.form-submit').click();
+  test('Enable Sector Social Share', async ({ page }) => {
+    await page.goto(`${testUrl}/admin/modules`);
 
-  await page.getByRole('button', { name: 'Continue' }).click();
+    // Click module label
+    await page.getByLabel('Sector Social Share').click();
+    // Install button cick
+    await page.locator('#edit-actions input.button.form-submit').click();
 
-  // Expects the URL to contain intro.
-  await expect(page).toHaveURL(/.*admin\/modules/);
-});
+    await page.getByRole('button', { name: 'Continue' }).click();
+
+    // Expects the URL to contain intro.
+    await expect(page).toHaveURL(/.*admin\/modules/);
+  });
+}

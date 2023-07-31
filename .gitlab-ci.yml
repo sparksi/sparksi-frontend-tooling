@@ -1,0 +1,43 @@
+stages:
+  - build
+
+variables:
+  DB_HOST: localhost
+  DB_NAME: my_drupal_project
+  DB_USER: my_db_user
+  DB_PASSWORD: $DB_PASSWORD
+
+# Define a job to build the Drupal project
+build:
+  stage: build
+  image: drupal:latest
+  script:
+    # Install dependencies
+    - composer install --no-interaction --prefer-dist
+    # Copy the settings file
+    - cp web/sites/default/default.settings.php web/sites/default/settings.php
+    # Create the database
+    - mysql -u $DB_USER -p$DB_PASSWORD -h $DB_HOST -e "CREATE DATABASE IF NOT EXISTS $DB_NAME;"
+    # Install Drupal
+    - php web/core/scripts/drupal install \
+        --db-url=mysql://$DB_USER:$DB_PASSWORD@$DB_HOST/$DB_NAME \
+        --site-name="My Drupal Site" \
+        --account-name=admin \
+        --account-pass=admin \
+        --site-mail="admin@example.com" \
+        --site-pass=admin
+  artifacts:
+    paths:
+      - web/
+
+# Define a job to run tests (optional)
+test:
+  stage: test
+  image: drupal:latest
+  script:
+    # Install dependencies
+    - composer install --no-interaction --prefer-dist
+    # Run tests
+    - phpunit -c web/core/ web/modules/custom/my_module/tests/
+  dependencies:
+    - build

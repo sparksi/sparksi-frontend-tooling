@@ -2,8 +2,7 @@
   "recommendations": [
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
-    "shinnn.stylelint",
-    "hex-ci.stylelint-plus",
+    "stylelint.vscode-stylelint",
     "bradlc.vscode-tailwindcss",
     "kamikillerto.vscode-colorize",
     "nicoespeon.abracadabra",

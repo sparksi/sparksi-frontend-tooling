@@ -17,7 +17,8 @@ test.describe('Visit home page and test for existance of a H1 with text', () => 
     await page.locator('h1.page-header').first();
     await expect(
       page.locator('h1.page-header', {
-        hasText: 'Sector. Content management made easy.',
+        hasText:
+          'Design and build captivating digital experiences even faster.',
       }),
     ).toBeVisible();
   });

@@ -1,6 +1,3 @@
 {
-  "singleQuote": true,
-  "trailingComma": "all",
-  "proseWrap": "always",
-  "tabWidth": 2
+  "extends": ["./packages/prettier/index.js"]
 }

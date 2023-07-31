@@ -26,7 +26,24 @@ module.exports = {
           'else',
           'for',
           'each',
+          'use',
+          'svg-load',
+          'tailwind',
+          'screen',
+          'apply',
         ],
+      },
+    ],
+    'function-no-unknown': [
+      true,
+      {
+        ignoreFunctions: ['theme', 'list.append', 'svg-inline', 'svg-load'],
+      },
+    ],
+    'scss/at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: ['tailwind', 'font-face'],
       },
     ],
     'at-rule-no-vendor-prefix': true,
@@ -34,18 +51,11 @@ module.exports = {
     'declaration-block-single-line-max-declarations': 1,
     'selector-class-pattern': null,
     'scss/at-mixin-pattern': null,
-    'scss/at-rule-no-unknown': null,
     'scss/dollar-variable-pattern': '[a-zA-Z]+(_[a-zA-Z]+)*',
     'no-invalid-position-at-import-rule': null,
     'declaration-block-no-redundant-longhand-properties': null,
     'declaration-block-no-shorthand-property-overrides': null,
     'no-descending-specificity': null,
-    'function-no-unknown': [
-      true,
-      {
-        ignoreFunctions: ['theme', 'list.append', 'svg-inline'],
-      },
-    ],
     'value-keyword-case': null,
   },
 };

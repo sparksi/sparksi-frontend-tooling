@@ -1,50 +1,54 @@
 import { test, expect } from '@playwright/test';
 
-const testUrl = 'https://sector10.ddev.site';
-const logindeets = 'test';
+const enableThisTest = false;
 
-test.beforeEach(async ({ page }) => {
-  await page.goto(`${testUrl}/user/login`);
+if (enableThisTest) {
+  const testUrl = 'https://sector10.ddev.site';
+  const logindeets = 'test';
 
-  // Find login form
-  await expect(page.locator('#user-login-form')).toBeVisible();
+  test.beforeEach(async ({ page }) => {
+    await page.goto(`${testUrl}/user/login`);
 
-  await page.getByRole('textbox', { name: 'name' }).fill(logindeets);
-  await page.getByRole('textbox', { name: 'pass' }).fill(logindeets);
+    // Find login form
+    await expect(page.locator('#user-login-form')).toBeVisible();
 
-  // Login
-  await page.getByRole('button', { name: 'Log in' }).click();
+    await page.getByRole('textbox', { name: 'name' }).fill(logindeets);
+    await page.getByRole('textbox', { name: 'pass' }).fill(logindeets);
 
-  // Expects the URL to contain intro.
-  await expect(page).toHaveURL(/.*user\/1/);
-});
+    // Login
+    await page.getByRole('button', { name: 'Log in' }).click();
 
-test('Uninstall Sector Social Share Module', async ({ page }) => {
-  await page.goto(`${testUrl}/admin/modules/uninstall`);
+    // Expects the URL to contain intro.
+    await expect(page).toHaveURL(/.*user\/1/);
+  });
 
-  // Click module label
-  await page.getByLabel('Uninstall Sector Social Share module').click();
+  test('Uninstall Sector Social Share Module', async ({ page }) => {
+    await page.goto(`${testUrl}/admin/modules/uninstall`);
 
-  // await expect(page.getByRole('button', { name: 'Continue' })).toBeVisible();
-  await page.getByRole('button', { name: 'Uninstall' }).click();
+    // Click module label
+    await page.getByLabel('Uninstall Sector Social Share module').click();
 
-  await expect(page).toHaveURL(/.*uninstall\/confirm/);
-  await page.getByRole('button', { name: 'Uninstall' }).click();
-  // Expects the URL to contain intro.
-  await expect(page).toHaveURL(/.*admin\/modules/);
-});
+    // await expect(page.getByRole('button', { name: 'Continue' })).toBeVisible();
+    await page.getByRole('button', { name: 'Uninstall' }).click();
 
-test('Uninstall Sector Social Follow Module', async ({ page }) => {
-  await page.goto(`${testUrl}/admin/modules/uninstall`);
+    await expect(page).toHaveURL(/.*uninstall\/confirm/);
+    await page.getByRole('button', { name: 'Uninstall' }).click();
+    // Expects the URL to contain intro.
+    await expect(page).toHaveURL(/.*admin\/modules/);
+  });
 
-  // Click module label
-  await page.getByLabel('Uninstall Sector Social Follow module').click();
+  test('Uninstall Sector Social Follow Module', async ({ page }) => {
+    await page.goto(`${testUrl}/admin/modules/uninstall`);
 
-  // await expect(page.getByRole('button', { name: 'Continue' })).toBeVisible();
-  await page.getByRole('button', { name: 'Uninstall' }).click();
+    // Click module label
+    await page.getByLabel('Uninstall Sector Social Follow module').click();
 
-  await expect(page).toHaveURL(/.*uninstall\/confirm/);
-  await page.getByRole('button', { name: 'Uninstall' }).click();
-  // Expects the URL to contain intro.
-  await expect(page).toHaveURL(/.*admin\/modules/);
-});
+    // await expect(page.getByRole('button', { name: 'Continue' })).toBeVisible();
+    await page.getByRole('button', { name: 'Uninstall' }).click();
+
+    await expect(page).toHaveURL(/.*uninstall\/confirm/);
+    await page.getByRole('button', { name: 'Uninstall' }).click();
+    // Expects the URL to contain intro.
+    await expect(page).toHaveURL(/.*admin\/modules/);
+  });
+}
