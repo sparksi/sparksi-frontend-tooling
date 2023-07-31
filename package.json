@@ -31,6 +31,11 @@
     "./packages/prettier/index.js",
     "./packages/stylelint/index.js"
   ],
+  "exports": {
+    "./packages/eslint": "./packages/eslint/index.js",
+    "./packages/prettier": "./packages/prettier/index.js",
+    "./packages/stylelint": "./packages/stylelint/index.js"
+  },
   "devDependencies": {
     "@playwright/test": "^1.36.2",
     "@types/node": "^20.4.5",
