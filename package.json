@@ -1,5 +1,5 @@
 {
-  "name": "@sparksi/project-template",
+  "name": "@sparksi/frontend-tooling",
   "packageManager": "pnpm@8.6.8",
   "version": "1.0.0",
   "description": "Sparks Interactive frontend-tooling. A central place for opens source packages and tools.",
@@ -25,7 +25,6 @@
     "test"
   ],
   "license": "MIT",
-  "private": true,
   "files": [
     "./packages/eslint/index.js",
     "./packages/prettier/index.js",

@@ -151,9 +151,7 @@ User Settings: `press CMD + P then > user` Open user settings JSON.
 
 ## To publish this as a package to NPM:
 
-(we did this but couldn't figure out how to include this as a package in node_modules - so made it a more manual process).
-
-### @sparksi/sparksi-frontend-tooling example
+### @sparksi/sparksi-frontend-tooling Package
 - see `https://www.freecodecamp.org/news/how-to-create-and-publish-your-first-npm-package/`
 - Run:
 * `npm login` - You'll need to authenticate.
