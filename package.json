@@ -1,7 +1,7 @@
 {
   "name": "@sparksi/frontend-tooling",
   "packageManager": "pnpm@8.6.8",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Sparks Interactive frontend-tooling. A central place for opens source packages and tools.",
   "author": "Sparks Interactive <developers@sparksinteractive.co.nz>",
   "scripts": {
@@ -57,12 +57,7 @@
       "prettier --write"
     ]
   },
-  "prettier": {
-    "singleQuote": true,
-    "trailingComma": "all",
-    "printWidth": 80,
-    "tabWidth": 2
-  },
+  "prettier": "./packages/prettier/index.js",
   "workspaces": [
     "packages/*/*"
   ]

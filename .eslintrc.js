@@ -1,3 +1,19 @@
 module.exports = {
-  extends: ["./packages/eslint/index.js"]
+  root: true,
+  extends: ['eslint:recommended', 'prettier'],
+  plugins: ['prettier'],
+  parserOptions: {
+    ecmaVersion: 2018, // Put whatever version you want here
+    sourceType: 'module',
+  },
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
+  settings: {
+    next: {
+      rootDir: ['src/*/'], // your theme folder components / src
+    },
+  },
 }

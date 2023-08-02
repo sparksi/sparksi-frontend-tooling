@@ -13,7 +13,7 @@ module.exports = {
   },
   settings: {
     next: {
-      rootDir: ['src/*/'],
+      rootDir: ['src/*/'], // your theme folder components / src
     },
   },
 };
