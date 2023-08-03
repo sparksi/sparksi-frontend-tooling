@@ -1,7 +1,7 @@
 {
   "name": "@sparksi/frontend-tooling",
   "packageManager": "pnpm@8.6.8",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Sparks Interactive frontend-tooling. A central place for opens source packages and tools.",
   "author": "Sparks Interactive <developers@sparksinteractive.co.nz>",
   "scripts": {
@@ -53,11 +53,10 @@
       "prettier --write"
     ],
     "*.{css,scss}": [
-      "stylelint --fix",
+      "stylelint --fix --allow-empty-input",
       "prettier --write"
     ]
   },
-  "prettier": "./packages/prettier/index.js",
   "workspaces": [
     "packages/*/*"
   ]
