@@ -8,13 +8,23 @@ jobs:
   test:
     timeout-minutes: 30
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [19]
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
       with:
-        node-version: 16
+        fetch-depth: 0
+    - uses: pnpm/action-setup@v2
+      with:
+        version: 8
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: pnpm
     - name: Install dependencies
-      run: pnpm install
+      run: pnpm install --no-frozen-lockfile
     - name: Install Playwright Browsers
       run: pnpm exec playwright install --with-deps
     - name: Run Playwright tests
