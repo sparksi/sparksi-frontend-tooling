@@ -43,7 +43,7 @@ module.exports = {
     'scss/at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: ['tailwind', 'font-face'],
+        ignoreAtRules: ['tailwind', 'font-face', 'screen', 'apply'],
       },
     ],
     'at-rule-no-vendor-prefix': true,
