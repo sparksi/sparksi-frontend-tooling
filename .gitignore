@@ -34,8 +34,6 @@ playwright-report/
 # next.js
 .next/
 out/
-build
-dist
 
 # misc
 .DS_Store
