@@ -43,7 +43,7 @@ module.exports = {
     'scss/at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: ['tailwind', 'font-face'],
+        ignoreAtRules: ['tailwind', 'font-face', 'screen', 'apply'],
       },
     ],
     'at-rule-no-vendor-prefix': true,
@@ -51,6 +51,7 @@ module.exports = {
     'declaration-block-single-line-max-declarations': 1,
     'selector-class-pattern': null,
     'scss/at-mixin-pattern': null,
+    'scss/operator-no-newline-after': null,
     'scss/dollar-variable-pattern': '[a-zA-Z]+(_[a-zA-Z]+)*',
     'no-invalid-position-at-import-rule': null,
     'declaration-block-no-redundant-longhand-properties': null,
