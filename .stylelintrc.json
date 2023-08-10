@@ -1,6 +1,6 @@
 {
   "extends": [
-    "@sparksi/frontend-tooling/packages/stylelint/index.js",
+    "@sparksi/frontend-tooling/packages/stylelint",
     "stylelint-config-prettier-scss"
   ]
 }
