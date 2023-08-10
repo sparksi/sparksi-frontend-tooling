@@ -12,17 +12,17 @@ importers:
         specifier: ^1.36.2
         version: 1.36.2
       '@types/node':
-        specifier: ^20.4.5
-        version: 20.4.5
+        specifier: ^20.4.9
+        version: 20.4.9
       eslint:
         specifier: ^8.46.0
         version: 8.46.0
       eslint-config-prettier:
-        specifier: ^8.9.0
-        version: 8.9.0(eslint@8.46.0)
+        specifier: ^8.10.0
+        version: 8.10.0(eslint@8.46.0)
       eslint-plugin-prettier:
         specifier: ^5.0.0
-        version: 5.0.0(eslint-config-prettier@8.9.0)(eslint@8.46.0)(prettier@3.0.0)
+        version: 5.0.0(eslint-config-prettier@8.10.0)(eslint@8.46.0)(prettier@3.0.1)
       husky:
         specifier: ^8.0.3
         version: 8.0.3
@@ -30,11 +30,11 @@ importers:
         specifier: ^13.2.3
         version: 13.2.3
       prettier:
-        specifier: ^3.0.0
-        version: 3.0.0
+        specifier: ^3.0.1
+        version: 3.0.1
       prettier-plugin-tailwindcss:
         specifier: ^0.4.1
-        version: 0.4.1(prettier@3.0.0)
+        version: 0.4.1(prettier@3.0.1)
       stylelint:
         specifier: ^15.10.2
         version: 15.10.2
@@ -52,11 +52,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /@babel/code-frame@7.22.5:
-    resolution: {integrity: sha512-Xmwn266vad+6DAqEB2A6V/CcZVp62BbwVmcOJc2RPuwih1kw02TjQvWVWlcKGbBPd+8/0V5DEkOcizRGYsspYQ==}
+  /@babel/code-frame@7.22.10:
+    resolution: {integrity: sha512-/KKIMG4UEL35WmI9OlvMhurwtytjvXoFcGNrOvyG9zIzA8YmPjVtIZUf7b05+TPO7G7/GEmLHDaoCgACHl9hhA==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/highlight': 7.22.5
+      '@babel/highlight': 7.22.10
+      chalk: 2.4.2
     dev: true
 
   /@babel/helper-validator-identifier@7.22.5:
@@ -64,8 +65,8 @@ packages:
     engines: {node: '>=6.9.0'}
     dev: true
 
-  /@babel/highlight@7.22.5:
-    resolution: {integrity: sha512-BSKlD1hgnedS5XRnGOljZawtag7H1yPfQp0tdNJCHoH6AZ+Pcm9VvkrK59/Yy593Ypg0zMxH2BxD1VPYUQ7UIw==}
+  /@babel/highlight@7.22.10:
+    resolution: {integrity: sha512-78aUtVcT7MUscr0K5mIEnkwxPE0MaxkR5RxRwuHaQ+JuU5AmTPhY+do2mdzVTnIJJpyBglql2pehuBIWHug+WQ==}
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/helper-validator-identifier': 7.22.5
@@ -87,8 +88,8 @@ packages:
     engines: {node: ^14 || ^16 || >=18}
     dev: true
 
-  /@csstools/media-query-list-parser@2.1.3(@csstools/css-parser-algorithms@2.3.1)(@csstools/css-tokenizer@2.2.0):
-    resolution: {integrity: sha512-ATul1u+pic4aVpstgueqxEv4MsObEbszAxfTXpx9LHaeD3LAh+wFqdCteyegWmjk0k5rkSCAvIOaJe9U3DD09w==}
+  /@csstools/media-query-list-parser@2.1.4(@csstools/css-parser-algorithms@2.3.1)(@csstools/css-tokenizer@2.2.0):
+    resolution: {integrity: sha512-V/OUXYX91tAC1CDsiY+HotIcJR+vPtzrX8pCplCpT++i8ThZZsq5F5dzZh/bDM3WUOjrvC1ljed1oSJxMfjqhw==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       '@csstools/css-parser-algorithms': ^2.3.1
@@ -202,7 +203,7 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
-      '@types/node': 20.4.5
+      '@types/node': 20.4.9
       playwright-core: 1.36.2
     optionalDependencies:
       fsevents: 2.3.2
@@ -212,8 +213,8 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node@20.4.5:
-    resolution: {integrity: sha512-rt40Nk13II9JwQBdeYqmbn2Q6IVTA5uPhvSO+JVqdXw/6/4glI6oR9ezty/A9Hg5u7JH4OmYmuQ+XvjKm0Datg==}
+  /@types/node@20.4.9:
+    resolution: {integrity: sha512-8e2HYcg7ohnTUbHk8focoklEQYvemQmu9M/f43DZVx43kHn0tE3BY/6gSDxS7k0SprtS0NHvj+L80cGLnoOUcQ==}
     dev: true
 
   /@types/normalize-package-data@2.4.1:
@@ -601,8 +602,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-prettier@8.9.0(eslint@8.46.0):
-    resolution: {integrity: sha512-+sbni7NfVXnOpnRadUA8S28AUlsZt9GjgFvABIRL9Hkn8KqNzOp+7Lw4QWtrwn20KzU3wqu1QoOj2m+7rKRqkA==}
+  /eslint-config-prettier@8.10.0(eslint@8.46.0):
+    resolution: {integrity: sha512-SM8AMJdeQqRYT9O9zguiruQZaN7+z+E4eAP9oiLNGKMtomwaB1E9dcgUD6ZAn/eQAb52USbvezbiljfZUhbJcg==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -610,7 +611,7 @@ packages:
       eslint: 8.46.0
     dev: true
 
-  /eslint-plugin-prettier@5.0.0(eslint-config-prettier@8.9.0)(eslint@8.46.0)(prettier@3.0.0):
+  /eslint-plugin-prettier@5.0.0(eslint-config-prettier@8.10.0)(eslint@8.46.0)(prettier@3.0.1):
     resolution: {integrity: sha512-AgaZCVuYDXHUGxj/ZGu1u8H8CYgDY3iG6w5kUFw4AzMVXzB7VvbKgYR4nATIN+OvUrghMbiDLeimVjVY5ilq3w==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -625,8 +626,8 @@ packages:
         optional: true
     dependencies:
       eslint: 8.46.0
-      eslint-config-prettier: 8.9.0(eslint@8.46.0)
-      prettier: 3.0.0
+      eslint-config-prettier: 8.10.0(eslint@8.46.0)
+      prettier: 3.0.1
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.5
     dev: true
@@ -1016,8 +1017,8 @@ packages:
     resolution: {integrity: sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==}
     dev: true
 
-  /is-core-module@2.12.1:
-    resolution: {integrity: sha512-Q4ZuBAe2FUsKtyQJoQHlvP8OvBERxO3jEmy1I7hcRXcJBGGHFh/aJBswbXuS9sgrDH2QUO8ilkwNPHvHMd8clg==}
+  /is-core-module@2.13.0:
+    resolution: {integrity: sha512-Z7dk6Qo8pOCp3l4tsX2C5ZVas4V+UxwQodwZhLopL91TX8UyyHEXafPcyoeeWuLrwzHcr3igO78wNLwHJHsMCQ==}
     dependencies:
       has: 1.0.3
     dev: true
@@ -1334,7 +1335,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       hosted-git-info: 4.1.0
-      is-core-module: 2.12.1
+      is-core-module: 2.13.0
       semver: 7.5.4
       validate-npm-package-license: 3.0.4
     dev: true
@@ -1436,7 +1437,7 @@ packages:
     resolution: {integrity: sha512-ayCKvm/phCGxOkYRSCM82iDwct8/EonSEgCSxWxD7ve6jHggsFl4fZVQBPRNgQoKiuV/odhFrGzQXZwbifC8Rg==}
     engines: {node: '>=8'}
     dependencies:
-      '@babel/code-frame': 7.22.5
+      '@babel/code-frame': 7.22.10
       error-ex: 1.3.2
       json-parse-even-better-errors: 2.3.1
       lines-and-columns: 1.2.4
@@ -1547,7 +1548,7 @@ packages:
       fast-diff: 1.3.0
     dev: true
 
-  /prettier-plugin-tailwindcss@0.4.1(prettier@3.0.0):
+  /prettier-plugin-tailwindcss@0.4.1(prettier@3.0.1):
     resolution: {integrity: sha512-hwn2EiJmv8M+AW4YDkbjJ6HlZCTzLyz1QlySn9sMuKV/Px0fjwldlB7tol8GzdgqtkdPtzT3iJ4UzdnYXP25Ag==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
@@ -1599,11 +1600,11 @@ packages:
       prettier-plugin-twig-melody:
         optional: true
     dependencies:
-      prettier: 3.0.0
+      prettier: 3.0.1
     dev: true
 
-  /prettier@3.0.0:
-    resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
+  /prettier@3.0.1:
+    resolution: {integrity: sha512-fcOWSnnpCrovBsmFZIGIy9UqK2FaI7Hqax+DIO0A9UxeVoY4iweyaFjS5TavZN97Hfehph0nhsZnjlVKzEQSrQ==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
@@ -1880,7 +1881,7 @@ packages:
       postcss-scss: 4.0.6(postcss@8.4.27)
       stylelint: 15.10.2
       stylelint-config-recommended: 12.0.0(stylelint@15.10.2)
-      stylelint-scss: 5.0.1(stylelint@15.10.2)
+      stylelint-scss: 5.1.0(stylelint@15.10.2)
     dev: true
 
   /stylelint-config-recommended@12.0.0(stylelint@15.10.2):
@@ -1915,8 +1916,8 @@ packages:
       stylelint-config-recommended: 12.0.0(stylelint@15.10.2)
     dev: true
 
-  /stylelint-scss@5.0.1(stylelint@15.10.2):
-    resolution: {integrity: sha512-n87iCRZrr2J7//I/QFsDXxFLnHKw633U4qvWZ+mOW6KDAp/HLj06H+6+f9zOuTYy+MdGdTuCSDROCpQIhw5fvQ==}
+  /stylelint-scss@5.1.0(stylelint@15.10.2):
+    resolution: {integrity: sha512-E+KlQFXv1Euha43qw3q+wKBSli557wxbbo6/39DWhRNXlUa9Cz+FYrcgz+PT6ag0l6UisCYjAGCNhoSl4FcwlA==}
     peerDependencies:
       stylelint: ^14.5.1 || ^15.0.0
     dependencies:
@@ -1934,7 +1935,7 @@ packages:
     dependencies:
       '@csstools/css-parser-algorithms': 2.3.1(@csstools/css-tokenizer@2.2.0)
       '@csstools/css-tokenizer': 2.2.0
-      '@csstools/media-query-list-parser': 2.1.3(@csstools/css-parser-algorithms@2.3.1)(@csstools/css-tokenizer@2.2.0)
+      '@csstools/media-query-list-parser': 2.1.4(@csstools/css-parser-algorithms@2.3.1)(@csstools/css-tokenizer@2.2.0)
       '@csstools/selector-specificity': 3.0.0(postcss-selector-parser@6.0.13)
       balanced-match: 2.0.0
       colord: 2.9.3
