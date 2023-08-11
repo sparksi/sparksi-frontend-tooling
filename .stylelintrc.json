@@ -1,6 +1,7 @@
 {
   "extends": [
     "@sparksi/frontend-tooling/packages/stylelint",
+    "prettier-plugin-tailwindcss",
     "stylelint-config-prettier-scss"
   ]
 }

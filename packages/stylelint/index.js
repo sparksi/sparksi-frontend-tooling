@@ -1,7 +1,11 @@
 'use strict';
 
 module.exports = {
-  extends: 'stylelint-config-standard-scss',
+  extends: [
+    'stylelint-config-standard-scss',
+    'prettier-plugin-tailwindcss',
+    'stylelint-config-prettier-scss',
+  ],
   rules: {
     'at-rule-empty-line-before': [
       'always',
