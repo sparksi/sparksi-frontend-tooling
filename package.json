@@ -32,7 +32,7 @@
     "./packages/stylelint": "./packages/stylelint/index.js"
   },
   "devDependencies": {
-    "@playwright/test": "^1.36.2",
+    "@playwright/test": "^1.37.0",
     "@types/node": "^20.4.9",
     "eslint": "^8.46.0",
     "eslint-config-prettier": "^8.10.0",
