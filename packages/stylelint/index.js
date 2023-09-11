@@ -44,13 +44,8 @@ module.exports = {
         ignoreFunctions: ['theme', 'list.append', 'svg-inline', 'svg-load'],
       },
     ],
+    'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': [
-      true,
-      {
-        ignoreAtRules: ['tailwind', 'font-face', 'screen', 'apply'],
-      },
-    ],
-    'css/at-rule-no-unknown': [
       true,
       {
         ignoreAtRules: ['tailwind', 'font-face', 'screen', 'apply'],
