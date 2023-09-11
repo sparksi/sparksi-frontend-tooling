@@ -27,6 +27,8 @@ coverage
 packages/tests/test-results/
 packages/tests/playwright-report/
 packages/tests/playwright/.cache/
+packages/tests/behat/vendor
+packages/tests/behat/bin
 playwright-report/index.html
 test-results/
 playwright-report/

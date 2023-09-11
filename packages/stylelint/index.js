@@ -50,6 +50,12 @@ module.exports = {
         ignoreAtRules: ['tailwind', 'font-face', 'screen', 'apply'],
       },
     ],
+    'css/at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: ['tailwind', 'font-face', 'screen', 'apply'],
+      },
+    ],
     'at-rule-no-vendor-prefix': true,
     'custom-property-empty-line-before': null,
     'declaration-block-single-line-max-declarations': 1,
