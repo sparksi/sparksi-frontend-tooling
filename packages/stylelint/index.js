@@ -38,12 +38,7 @@ module.exports = {
         ],
       },
     ],
-    'function-no-unknown': [
-      true,
-      {
-        ignoreFunctions: ['theme', 'list.append', 'svg-inline', 'svg-load'],
-      },
-    ],
+    'function-no-unknown': null,
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': [
       true,
