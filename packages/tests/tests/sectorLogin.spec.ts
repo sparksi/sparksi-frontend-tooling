@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 const enableThisTest = false;
 
 if (enableThisTest) {
-  const testUrl = 'https://sector10.ddev.site';
+  const testUrl = 'https://sector10beta.sector.nz/';
   const logindeets = 'test';
 
   test('Login in to Sector', async ({ page }) => {
