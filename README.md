@@ -151,7 +151,7 @@ User Settings: `press CMD + P then > user` Open user settings JSON.
 - see `https://www.freecodecamp.org/news/how-to-create-and-publish-your-first-npm-package/`
 - Run:
 * `npm login` - You'll need to authenticate.
-* `npm pubish` - You'll need to authenticate again.
+* `npm publish` - You'll need to authenticate again.
 
 Updating [package](https://docs.npmjs.com/getting-started/publishing-npm-packages#how-to-update-a-package).
 
