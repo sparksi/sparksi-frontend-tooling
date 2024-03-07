@@ -32,7 +32,7 @@ pnpm i
 - Run `pnpm i`
 - Run `pnpm prepare` if the above command didn't do so already. This will install the "husky hook" with lint-staged command.
 
-Then extend your configs, for example, from a drupal theme: web/themes/custom/yourtheme, in your `https://github.com/sparksi/sector-distribution/blob/10.0.x/themes/sector_starter/.stylelintrc.json`
+Then extend your configs, for example, from a drupal theme: web/themes/custom/yourtheme, in your `https://git.drupalcode.org/project/sector_theme/-/blob/1.1.x/themes/sector_demo/.stylelintrc.json`
 
 ```json
 // .stylelintrc.json file
@@ -47,8 +47,6 @@ Then extend your configs, for example, from a drupal theme: web/themes/custom/yo
   - `eslint`: EsLint config for extending your coding workspace - currently not used.
   - `stylelint`: Stylelint config for extending your coding workspace.
   - `prettier`: Prettier config for extending your coding workspace.
-  - `tests`: Playwright silent functional and e2e style tests
-    - see more examples https://playwright.dev/docs/writing-tests
 
 ### Contribute to this template.
 
@@ -56,20 +54,6 @@ Then extend your configs, for example, from a drupal theme: web/themes/custom/yo
 * Make your changes.
 * Update [Changelog](CHANGELOG.md).
 * Commit changes and open a pull request.
-
-## Tests
-* Tests and examples are in the packages/tests folder
-
-*TO FIRST START USING TESTS, RUN:*
-- `pnpm dlx playwright install`
-
-Then:
-
-- run `pnpm exec playwright test` (headless)
-- run `pnpm exec playwright testui` (in a chromium UI)
-
-Read more about [Playwright](https://playwright.dev/)
-
 
 ### Extending the config
 
