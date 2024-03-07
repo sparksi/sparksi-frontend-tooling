@@ -4,7 +4,6 @@
 
 This is the the Sparks Interactive Project template tooling hub with opensource packages and tools.
 Currently the tools / packages are linters like Eslint, StyleLint, Prettier and pre-commit hooks, with recommended extensions for realtime linting as you save your work and push to version control.
-We've added on Playwright for Frontend testing.
 
 ## Setup locally
 When starting a new project, these files can be used as a base, in the root of your project folder. This works outside of and a precursor to any other theme/folder like in Drupal web/themes, where you might have other packages. See further instructions on how to use these settings, to extend your themes' settings.
@@ -29,7 +28,7 @@ pnpm i
 
 ### If you are adding this to an existing project
 - Copy files to the root (or copy and paste parts that make sense)
-- Run `pnpm i`
+- Run `pnpm install`
 - Run `pnpm prepare` if the above command didn't do so already. This will install the "husky hook" with lint-staged command.
 
 Then extend your configs, for example, from a drupal theme: web/themes/custom/yourtheme, in your `https://git.drupalcode.org/project/sector_theme/-/blob/1.1.x/themes/sector_demo/.stylelintrc.json`
@@ -43,7 +42,6 @@ Then extend your configs, for example, from a drupal theme: web/themes/custom/yo
 
 ### Folder Structure
 - `packages/`
-  - `ui/src`: UI components (if we were to use storybook)
   - `eslint`: EsLint config for extending your coding workspace - currently not used.
   - `stylelint`: Stylelint config for extending your coding workspace.
   - `prettier`: Prettier config for extending your coding workspace.
@@ -90,17 +88,18 @@ Plugins are rules or sets of rules built by the community that support methodolo
 ## IDE Extensions
 * VSCODE
   ```
+
     Name: Stylelint
     Id: stylelint.vscode-stylelint
     Description: Official Stylelint extension for Visual Studio Code
-    Version: 1.2.4
+    Version: 1.3.0
     Publisher: Stylelint
     VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint
 
     Name: Prettier - Code formatter
     Id: esbenp.prettier-vscode
     Description: Code formatter using prettier
-    Version: 9.19.0
+    Version: 10.1.0
     Publisher: Prettier
     VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
   ```
@@ -110,15 +109,34 @@ Plugins are rules or sets of rules built by the community that support methodolo
 ** Example - VSCode settings - with Sparks project-template cloned locally, setting Prettier to be defaultFormatter":
 
 User Settings: `press CMD + P then > user` Open user settings JSON.
+Example of some of my settings... you can explicitly set certain formatters for certain code types.
+
+Because esbenp.prettier-vscode now also works with stylelint, one doesn't need to set the stylelint extension.
 
 ```json
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[scss]": {
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.tslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
   },
 ```
 
