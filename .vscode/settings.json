@@ -37,4 +37,8 @@
   "prettier.semi": true,
   "css.completion.completePropertyWithSemicolon": true,
   "scss.completion.completePropertyWithSemicolon": true,
+  "scss.validate": false,
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }

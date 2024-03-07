@@ -4,8 +4,13 @@
   "version": "1.0.17",
   "description": "Sparks Interactive frontend-tooling. A central place for opens source packages and tools.",
   "author": "Sparks Interactive <developers@sparksinteractive.co.nz>",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
-    "build": "pnpm -r build",
+    "build": "pnpm --stream -r build",
+    "tw": "pnpm --stream -r tw",
+    "watch": "pnpm --stream -r watch:node",
     "prepare": "husky install && pnpm install",
     "qa": "stylelint {**,.,*/**,**/**/}*.scss",
     "stylelint-scss-check": "stylelint-config-prettier-scss-check"
@@ -17,16 +22,6 @@
     "prettier"
   ],
   "license": "MIT",
-  "files": [
-    "./packages/eslint/index.js",
-    "./packages/prettier/index.js",
-    "./packages/stylelint/index.js"
-  ],
-  "exports": {
-    "./packages/eslint": "./packages/eslint/index.js",
-    "./packages/prettier": "./packages/prettier/index.js",
-    "./packages/stylelint": "./packages/stylelint/index.js"
-  },
   "devDependencies": {
     "@types/node": "^20.11.25",
     "eslint": "^8.57.0",

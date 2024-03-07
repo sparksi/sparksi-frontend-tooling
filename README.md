@@ -21,22 +21,21 @@ Or
 - `brew install pnpm`
 
 ```sh
-git clone git@github.com:sparksi/project-template.git
-cd project-template
-pnpm i
+git clone https://gitlab.sparksi.co/sector/project
+cd project
+pnpm install
 ```
 
 ### If you are adding this to an existing project
 - Copy files to the root (or copy and paste parts that make sense)
-- Run `pnpm install`
-- Run `pnpm prepare` if the above command didn't do so already. This will install the "husky hook" with lint-staged command.
+- Run `pnpm prepare`. This will install packages and the "husky hook" with lint-staged command.
 
 Then extend your configs, for example, from a drupal theme: web/themes/custom/yourtheme, in your `https://git.drupalcode.org/project/sector_theme/-/blob/1.1.x/themes/sector_demo/.stylelintrc.json`
 
 ```json
 // .stylelintrc.json file
 {
-  "extends": "/absolute/path/to/project-template/packages/stylelint" // this might need to be "../../../../../../packages/stylelint/index.js" if working in Sector web profiles, themes sector_starter
+  "extends": "/absolute/path/project-root/.stylelint.json"
 }
 ```
 
@@ -61,8 +60,8 @@ For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` 
 
 ```json
 {
-  // theme .stylelintrc.json
-  "extends": "../../../../packages/stylelint/index.js",
+  // From Custom theme's .stylelintrc.json
+  "extends": "../../../../.stylelintrc.json",
   "rules": {
     "at-rule-no-unknown": [ true, {
       "ignoreAtRules": [

@@ -6,8 +6,5 @@
     "bradlc.vscode-tailwindcss",
     "kamikillerto.vscode-colorize",
     "nicoespeon.abracadabra",
-    "ms-playwright.playwright",
-    "deque-systems.vscode-axe-linter",
-    "MaxvanderSchee.web-accessibility",
   ]
 }
