@@ -1,7 +1,7 @@
 {
   "name": "@sparksi/frontend-tooling",
-  "packageManager": "pnpm@8.6.8",
-  "version": "1.0.9",
+  "packageManager": "pnpm@8.7.5",
+  "version": "1.0.16",
   "description": "Sparks Interactive frontend-tooling. A central place for opens source packages and tools.",
   "author": "Sparks Interactive <developers@sparksinteractive.co.nz>",
   "scripts": {
@@ -49,10 +49,10 @@
     "./web/themes/custom/**/*.{js,ts}": [
       "prettier --write"
     ],
-    "./web/profiles/contrib/sector-distribution/**/*.{js,ts}": [
+    "./web/themes/contrib/sector_theme/**/*.{js,ts}": [
       "prettier --write"
     ],
-    "*.{css,scss}": [
+    "*.scss": [
       "stylelint --fix --allow-empty-input",
       "prettier --write"
     ]

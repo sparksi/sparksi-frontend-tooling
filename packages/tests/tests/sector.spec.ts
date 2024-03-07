@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-const testUrl = 'https://www.sector.nz';
+const testUrl = 'https://sector10beta.sector.nz';
 
 test.beforeEach(async ({ page }) => {
   await page.goto(testUrl);
@@ -9,13 +9,12 @@ test.beforeEach(async ({ page }) => {
 test('has title', async ({ page }) => {
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(
-    /Design and build captivating digital experiences even faster/,
+    /Design and build captivating digital experiences even faster./,
   );
 });
 
-
 test('has block social block in footer', async ({ page }) => {
-  const followBlock = page.locator('.footer .business-card__social');
+  const followBlock = page.locator('.footer-post .block--menu-social--follow');
   await followBlock.waitFor();
 });
 
