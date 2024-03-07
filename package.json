@@ -1,14 +1,12 @@
 {
   "name": "@sparksi/frontend-tooling",
-  "packageManager": "pnpm@8.7.5",
-  "version": "1.0.16",
+  "packageManager": "pnpm@8.15.4",
+  "version": "1.0.17",
   "description": "Sparks Interactive frontend-tooling. A central place for opens source packages and tools.",
   "author": "Sparks Interactive <developers@sparksinteractive.co.nz>",
   "scripts": {
     "build": "pnpm -r build",
-    "prepare": "husky install",
-    "test": "pnpm exec playwright test",
-    "uitest": "pnpm exec playwright test --ui",
+    "prepare": "husky install && pnpm install",
     "qa": "stylelint {**,.,*/**,**/**/}*.scss",
     "stylelint-scss-check": "stylelint-config-prettier-scss-check"
   },
@@ -16,9 +14,7 @@
     "stylelint",
     "stylelint-config",
     "eslint",
-    "prettier",
-    "playwright",
-    "test"
+    "prettier"
   ],
   "license": "MIT",
   "files": [
@@ -32,34 +28,33 @@
     "./packages/stylelint": "./packages/stylelint/index.js"
   },
   "devDependencies": {
-    "@playwright/test": "^1.37.0",
-    "@types/node": "^20.4.9",
-    "eslint": "^8.46.0",
+    "@types/node": "^20.11.25",
+    "eslint": "^8.57.0",
     "eslint-config-prettier": "^8.10.0",
-    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-prettier": "^5.1.3",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.3",
-    "prettier": "^3.0.1",
+    "lint-staged": "^13.3.0",
+    "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.4.1",
-    "stylelint": "^15.10.2",
+    "stylelint": "^15.11.0",
     "stylelint-config-prettier-scss": "^1.0.0",
     "stylelint-config-standard-scss": "^10.0.0"
   },
   "lint-staged": {
-    "./web/themes/custom/**/*.{js,ts}": [
+    "./web/themes/custom/**/*.ts": [
       "prettier --write"
     ],
-    "./web/themes/contrib/sector_theme/**/*.{js,ts}": [
+    "*.{scss}": [
+      "stylelint --fix --allow-empty-input",
       "prettier --write"
     ],
-    "*.scss": [
+    "web/themes/custom/*/src/*.css": [
       "stylelint --fix --allow-empty-input",
       "prettier --write"
     ]
   },
   "workspaces": [
     "packages/*/*",
-    "web/themes/custom/*",
-    "web/profiles/contrib/sector-distribution/themes/*"
+    "web/themes/custom/*"
   ]
 }
