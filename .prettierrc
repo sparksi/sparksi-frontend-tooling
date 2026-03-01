@@ -3,5 +3,5 @@
   "trailingComma": "all",
   "proseWrap": "always",
   "tabWidth": 2,
-  "plugins": ["eslint-plugin-prettier", "prettier-plugin-tailwindcss"]
+  "plugins": ["prettier-plugin-tailwindcss"]
 }
