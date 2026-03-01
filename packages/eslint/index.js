@@ -3,7 +3,7 @@ module.exports = {
   extends: ['eslint:recommended', 'prettier'],
   plugins: ['prettier'],
   parserOptions: {
-    ecmaVersion: 2018, // Put whatever version you want here
+    ecmaVersion: latest,
     sourceType: 'module',
   },
   env: {
@@ -13,7 +13,7 @@ module.exports = {
   },
   settings: {
     next: {
-      rootDir: ['src/*/'], // your theme folder components / src
+      rootDir: ['components/*/','global/*'], // your theme folder components / src
     },
   },
 };

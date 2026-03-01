@@ -3,5 +3,5 @@ module.exports = {
   trailingComma: 'all',
   proseWrap: 'always',
   tabWidth: 2,
-  plugins: ['eslint-plugin-prettier', 'prettier-plugin-tailwindcss'], // MUST come last
+  plugins: ['prettier-plugin-tailwindcss'], // MUST come last
 };

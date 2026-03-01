@@ -1,3 +1,3 @@
 vendor/**/*.css
-web/themes/contrib/**/*.css
-web/themes/custom/**/*.css
+public/themes/contrib/**/*.css
+public/themes/custom/**/*.css
