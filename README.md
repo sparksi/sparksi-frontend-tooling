@@ -21,7 +21,7 @@ Or
 - `brew install pnpm`
 
 ```sh
-git clone https://gitlab.sparksi.co/sector/project
+git clone https://sector-project-repo.com
 cd project
 pnpm install
 ```
