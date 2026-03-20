@@ -1,19 +1,34 @@
 {
   "breadcrumbs.enabled": true,
-  "css.validate": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
   "diffEditor.ignoreTrimWhitespace": false,
-  "editor.detectIndentation": true,
   "editor.tabSize": 2,
-  "editor.insertSpaces": true,
   "editor.autoIndent": "full",
-  "editor.formatOnPaste": true,
+  "editor.insertSpaces": true,
+  "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.tslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
   "editor.renderWhitespace": "boundary",
   "editor.wordWrapColumn": 80,
   "editor.wordWrap": "off",
-  "editor.rulers": [
-    80
+  "editor.detectIndentation": true,
+  "editor.rulers": [80],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "tailwindCSS.hovers": true,
+  "drupalSDCHelper.componentDirectories": [
+    "public/themes/custom/*/components/**",
+    "public/modules/custom/*/components/**"
   ],
+  "[twig]": {
+    "editor.defaultFormatter": "mblode.twig-language-2"
+  },
   "files.associations": {
     "*.inc": "php",
     "*.module": "php",
@@ -30,11 +45,30 @@
   "files.insertFinalNewline": true,
   "html.format.enable": true,
   "html.format.wrapLineLength": 80,
-  "prettier.semi": true,
-  "css.completion.completePropertyWithSemicolon": true,
-  "scss.completion.completePropertyWithSemicolon": true,
-  "scss.validate": false,
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "explorer.excludeGitIgnore": true,
+  "search.followSymlinks": false,
+  "files.exclude": {
+    "**/.cache": true,
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/vendor": true
   },
+  "files.watcherExclude": {
+    "**/.cache": true,
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/vendor": true
+  },
+  "search.exclude": {
+    "**/.cache": true,
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/vendor": true
+  },
+  "tailwindcss-intellisense.trace.server": "messages",
+  "[pcss]": {
+    "editor.defaultFormatter": "bradlc.vscode-tailwindcss",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false
+  }
 }
