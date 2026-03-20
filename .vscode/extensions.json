@@ -5,6 +5,10 @@
     "stylelint.vscode-stylelint",
     "bradlc.vscode-tailwindcss",
     "kamikillerto.vscode-colorize",
-    "nicoespeon.abracadabra",
+    "davis-are.drupal-sdc-helper",
+    "marcostazi.vs-code-drupal",
+    "bradlc.vscode-tailwindcss",
+    "whatwedo.twig",
+    "mblode.twig-language-2",
   ]
 }
