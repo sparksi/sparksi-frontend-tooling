@@ -4,37 +4,34 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-importers:
-
-  .:
-    devDependencies:
-      '@types/node':
-        specifier: ^25.3.3
-        version: 25.3.3
-      eslint:
-        specifier: ^10.0.2
-        version: 10.0.2
-      eslint-config-prettier:
-        specifier: ^10.1.8
-        version: 10.1.8(eslint@10.0.2)
-      husky:
-        specifier: ^9.1.7
-        version: 9.1.7
-      lint-staged:
-        specifier: ^16.3.1
-        version: 16.3.1
-      prettier:
-        specifier: ^3.8.1
-        version: 3.8.1
-      prettier-plugin-tailwindcss:
-        specifier: ^0.7.2
-        version: 0.7.2(prettier@3.8.1)
-      stylelint:
-        specifier: ^17.4.0
-        version: 17.4.0
-      stylelint-config-standard:
-        specifier: ^40.0.0
-        version: 40.0.0(stylelint@17.4.0)
+devDependencies:
+  '@types/node':
+    specifier: ^25.3.3
+    version: 25.3.3
+  eslint:
+    specifier: ^10.0.2
+    version: 10.0.2
+  eslint-config-prettier:
+    specifier: ^10.1.8
+    version: 10.1.8(eslint@10.0.2)
+  husky:
+    specifier: ^9.1.7
+    version: 9.1.7
+  lint-staged:
+    specifier: ^16.3.1
+    version: 16.3.1
+  prettier:
+    specifier: ^3.8.1
+    version: 3.8.1
+  prettier-plugin-tailwindcss:
+    specifier: ^0.7.2
+    version: 0.7.2(prettier@3.8.1)
+  stylelint:
+    specifier: ^17.4.0
+    version: 17.4.0
+  stylelint-config-standard:
+    specifier: ^40.0.0
+    version: 40.0.0(stylelint@17.4.0)
 
 packages:
 
@@ -672,7 +669,7 @@ packages:
     resolution: {integrity: sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw==}
     engines: {node: '>=16'}
     dependencies:
-      flatted: 3.3.3
+      flatted: 3.4.2
       keyv: 4.5.4
     dev: true
 
@@ -680,12 +677,12 @@ packages:
     resolution: {integrity: sha512-AhHYqwvN62NVLp4lObVXGVluiABTHapoB57EyegZVmazN+hhGhLTn3uZbOofoTw4DSDvVCadzzyChXhOAvy8uQ==}
     dependencies:
       cacheable: 2.3.3
-      flatted: 3.3.3
+      flatted: 3.4.2
       hookified: 1.15.1
     dev: true
 
-  /flatted@3.3.3:
-    resolution: {integrity: sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg==}
+  /flatted@3.4.2:
+    resolution: {integrity: sha512-PjDse7RzhcPkIJwy5t7KPWQSZ9cAbzQXcafsetQoD7sOJRQlGikNbx7yZp2OotDnJyrDcbyRq3Ttb18iYOqkxA==}
     dev: true
 
   /get-east-asian-width@1.5.0:
